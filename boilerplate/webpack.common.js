@@ -65,6 +65,6 @@ function getHtmlPlugins(chunks) {
   return chunks.map(chunk => new HtmlPlugin({
     title: "Extension boilerplate",
     filename: `${chunk}.html`,
-    chunks: chunk,
+    chunks: [chunk],
   }));
 }
